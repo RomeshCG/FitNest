@@ -4,8 +4,6 @@
 
     <application
         android:allowBackup="true"
-        android:dataExtractionRules="@xml/data_extraction_rules"
-        android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -13,11 +11,9 @@
         android:theme="@style/Theme.FitNest"
         tools:targetApi="31">
         <activity
-            android:name=".OnBoardingScreen1"
+            android:name=".OnBoardingScreen3"
             android:exported="false" />
-        <activity
-            android:name=".LaunchScreen"
-            android:exported="false" />
+        <!-- MainActivity first -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -26,7 +22,16 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+        </activity> <!-- LaunchScreen comes after MainActivity -->
+        <activity
+            android:name=".LaunchScreen"
+            android:exported="false" /> <!-- OnBoarding Screen -->
+        <activity
+            android:name=".OnBoardingScreen1"
+            android:exported="false" />
+        <activity
+            android:name=".OnBoardingScreen2"
+            android:exported="false" />
     </application>
 
 </manifest>

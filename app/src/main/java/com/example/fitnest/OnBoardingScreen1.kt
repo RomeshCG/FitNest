@@ -1,6 +1,8 @@
 package com.example.fitnest
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -18,5 +20,13 @@ class OnBoardingScreen1 : AppCompatActivity() {
         }
 
         setContentView(R.layout.activity_on_boarding_screen1)
+
+        val nextbtn = findViewById<Button>(R.id.nextbtn1)
+
+        nextbtn.setOnClickListener{
+            intent = Intent(this,OnBoardingScreen2::class.java)
+            startActivity(intent)
+        }
+
     }
 }
