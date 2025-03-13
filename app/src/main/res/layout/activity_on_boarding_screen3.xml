@@ -23,7 +23,7 @@
         android:layout_height="321dp"
         android:layout_centerInParent="true"
         android:scaleType="fitCenter"
-        android:src="@drawable/two" />
+        android:src="@drawable/women" />
 
     <!-- Title -->
     <TextView
@@ -33,7 +33,7 @@
         android:layout_below="@id/onBoardingImage"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:text="PERFECT BODY"
+        android:text="HEALTHY MUSCULAR"
         android:textColor="@color/accentColor"
         android:textSize="24sp"
         android:textStyle="bold" />
@@ -43,13 +43,13 @@
         android:id="@+id/subtitleText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="DOING CROSSFIT EXERCISES"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:textColor="@color/backgroundColor"
         android:layout_below="@id/titleText"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:text="SPORTSWOMEN STANDING"
+        android:textColor="@color/backgroundColor"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <!-- Bottom Navigation (Skip, Dots, Next) -->
     <LinearLayout

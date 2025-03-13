@@ -1,6 +1,10 @@
 package com.example.fitnest
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
+import android.widget.ImageButton
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -15,6 +19,39 @@ class Register : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+        // Create Account Button
+        val createAccountButton = findViewById<Button>(R.id.createAccountButton)
+        createAccountButton.setOnClickListener {
+            intent= Intent(this,DataCollectionOne::class.java)
+            startActivity(intent)
+
+        }
+
+        // Google Register Button
+        val googleRegisterButton = findViewById<Button>(R.id.googleRegisterButton)
+        googleRegisterButton.setOnClickListener {
+            // Handle Google
+        }
+
+        // Facebook Register Button
+        val facebookRegisterButton = findViewById<Button>(R.id.facebookRegisterButton)
+        facebookRegisterButton.setOnClickListener {
+            // Handle Facebook
+        }
+
+        // Login Text Navigation
+        val loginText = findViewById<TextView>(R.id.loginText)
+        loginText.setOnClickListener {
+            val intent = Intent(this,PageLogin::class.java)
+            startActivity(intent)
+        }
+
+        // RegisterActivity.kt and LoginActivity.kt
+        val backButton = findViewById<ImageButton>(R.id.backButton)
+        backButton.setOnClickListener {
+            onBackPressed()
         }
     }
 }

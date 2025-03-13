@@ -11,6 +11,15 @@
         android:theme="@style/Theme.FitNest"
         tools:targetApi="31">
         <activity
+            android:name=".DataCollectionOne"
+            android:exported="false" />
+        <activity
+            android:name=".codePage"
+            android:exported="false" />
+        <activity
+            android:name=".verifiyAccount"
+            android:exported="false" />
+        <activity
             android:name=".Home"
             android:exported="false" />
         <activity

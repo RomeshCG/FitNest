@@ -28,5 +28,11 @@ class OnBoardingScreen1 : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val skipbtn = findViewById<Button>(R.id.skipbtn)
+        skipbtn.setOnClickListener{
+            intent = Intent(this,PageLogin::class.java)
+            startActivity(intent)
+        }
+
     }
 }
