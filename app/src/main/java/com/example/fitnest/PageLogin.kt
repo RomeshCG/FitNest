@@ -30,7 +30,7 @@ class PageLogin : AppCompatActivity() {
         // Login Button
         val loginButton = findViewById<Button>(R.id.loginButton)
         loginButton.setOnClickListener {
-            intent =Intent(this,Home::class.java)
+            intent = Intent(this, NavigationActivity::class.java)
             startActivity(intent)
 
         }

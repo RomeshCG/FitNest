@@ -10,24 +10,25 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/backgroundColor"
+        android:background="@color/backgroundpage"
+        android:backgroundTint="@color/backgroundpage"
         android:padding="24dp">
 
         <ImageButton
             android:id="@+id/backButton"
             android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:src="@drawable/arrowr"
-        android:background="?attr/selectableItemBackgroundBorderless"
-        android:contentDescription="@string/back_button"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="1dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:scaleType="fitCenter"
-        android:adjustViewBounds="true"
-        android:focusable="true"
-        android:clickable="true"/>
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="16dp"
+            android:adjustViewBounds="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:contentDescription="@string/back_button"
+            android:focusable="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/arrowr" />
         <!-- Logo -->
         <ImageView
             android:id="@+id/appLogo"
