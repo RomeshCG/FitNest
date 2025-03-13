@@ -11,9 +11,26 @@
         android:theme="@style/Theme.FitNest"
         tools:targetApi="31">
         <activity
-            android:name=".OnBoardingScreen3"
+            android:name=".Home"
             android:exported="false" />
-        <!-- MainActivity first -->
+        <activity
+            android:name=".PageLogin"
+            android:exported="false" />
+        <activity
+            android:name=".LoginApp"
+            android:exported="false" />
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".FrogetPassword"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="false" />
+        <activity
+            android:name=".OnBoardingScreen3"
+            android:exported="false" /> <!-- MainActivity first -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
