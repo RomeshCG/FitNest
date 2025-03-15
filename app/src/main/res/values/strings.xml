@@ -2,5 +2,16 @@
     <string name="app_name">FitNest</string>.
     <string name="start_button_text">Let\s Start</string>
     <string name="back_button">Back Button</string>
+        <string name="meal_plan_title">FULL EXERCISE</string>
+        <string name="meal_plan_description">HEALTHY BALANCED VEGETARIAN FOOD\n\nThere are many variations of passages of Lorem ipsum available, but the majority have suffered alteration in some form, by injected humour.</string>
+        <string name="meal_plan_fat">Fat\n1.5g</string>
+        <string name="meal_plan_protein">Protein\n10.9g</string>
+        <string name="meal_plan_carbs">Carbs\n13.5g</string>
+        <string name="other_meals">Other Meals</string>
+        <string name="meal_plan_1">Healthy vegan salad of vegetables</string>
+        <string name="meal_plan_2">Ketogenic/paleo diet, fried eggs, salmon</string>
+        <string name="meal_plan_3">Grilled chicken with quinoa and veggies</string>
+        <string name="nutritional_info">Fat: 1.5g | Protein: 10.9g | Carbs: 13.5g</string>
+
 
 </resources>

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/backgroundColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Back Button -->
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/arrowr"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/back_button"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentStart="true"/>
+
+        <!-- Main Meal Image -->
+        <ImageView
+            android:id="@+id/mainMealImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/greenchicken"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="Main Meal Image"/>
+
+        <!-- Main Meal Details -->
+        <TextView
+            android:id="@+id/mainMealName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tortilla wrap with falafel and fresh salad"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/mainMealDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HEALTHY BALANCED VEGETARIAN FOOD\n\nThere are many variations of passages of Lorem ipsum available, but the majority have suffered alteration in some form, by injected humour."
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Nutritional Information -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/fatText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Fat\n1.5g"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/proteinText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Protein\n10.9g"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/carbsText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Carbs\n13.5g"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <!-- Other Meals Section -->
+        <TextView
+            android:id="@+id/otherMealsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other Meals"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Other Meal 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/boiled_eggswholewheattoast"
+            android:scaleType="centerCrop"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="Meal Plan 1"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Healthy vegan salad of vegetables"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fat: 1.5g | Protein: 10.9g | Carbs: 13.5g"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Other Meal 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/greekyogurtberrieshoney"
+            android:scaleType="centerCrop"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="Meal Plan 2"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ketogenic/paleo diet, fried eggs, salmon"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fat: 1.5g | Protein: 10.9g | Carbs: 13.5g"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Other Meal 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/boiled_eggswholewheattoast"
+            android:scaleType="centerCrop"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="Meal Plan 3"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Grilled chicken with quinoa and veggies"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fat: 1.5g | Protein: 10.9g | Carbs: 13.5g"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Other Meal 4 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/salmonquinoaavocado"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="16dp"
+                android:contentDescription="Meal Plan 4"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Salmonquin Avacado Meal"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fat: 2.5g | Protein: 10.9g | Carbs: 13.5g"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Other Meal 5 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/greenchicken"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="16dp"
+                android:contentDescription="Meal Plan 5"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Grilled chicken with quinoa and veggies"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fat: 3.5g | Protein: 10.9g | Carbs: 13.5g"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
