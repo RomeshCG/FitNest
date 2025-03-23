@@ -27,4 +27,7 @@ class Homee : Fragment() {
     ): View {
         return inflater.inflate(R.layout.fragment_homee, container, false)
     }
+
+
+
 }

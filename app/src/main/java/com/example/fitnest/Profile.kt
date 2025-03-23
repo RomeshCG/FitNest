@@ -32,6 +32,12 @@ class Profile : Fragment() {
             startActivity(intent)
         }
 
+        val appSettingsButton = view.findViewById<Button>(R.id.appSettingsButton)
+        appSettingsButton.setOnClickListener{
+            val intent = Intent(requireContext(), Settings::class.java)
+            startActivity(intent)
+        }
+
         return view
     }
 }

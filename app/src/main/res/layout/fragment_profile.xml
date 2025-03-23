@@ -3,48 +3,37 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    android:background="@color/backgroundColor">
+    android:background="@android:color/white">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:gravity="center_horizontal"
-        android:padding="24dp">
+        android:padding="16dp">
 
         <!-- Profile Image -->
         <ImageView
             android:id="@+id/profileImage"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_marginBottom="12dp"
-            android:src="@drawable/userimg"
-            android:scaleType="centerCrop"
-            android:background="@drawable/rounded_background" />
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/profile_img"
+            android:scaleType="centerCrop" />
 
         <!-- User Name -->
         <TextView
             android:id="@+id/userName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginBottom="8dp"
-            android:text="Jenna Watson"
-            android:textColor="@color/primaryColor"
-            android:textSize="22sp"
+            android:text="DHRUVIT"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
-        <!-- Edit Profile Button -->
-        <Button
-            android:id="@+id/editProfileButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Edit Profile"
-            android:textSize="16sp"
-            android:textColor="@android:color/white"
-            android:backgroundTint="@color/buttonColor"
-            android:layout_marginBottom="24dp" />
-
-        <!-- User Details Section (Fixed Layout Attributes) -->
+        <!-- User Details Section -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -61,20 +50,20 @@
                 android:gravity="center">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Weight"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:textColor="@android:color/black" />
-
-                <TextView
                     android:id="@+id/userWeight"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="56 kg"
-                    android:textColor="@android:color/darker_gray"
-                    android:textSize="18sp" />
+                    android:text="55 kg"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Weight"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/darker_gray" />
             </LinearLayout>
 
             <!-- Height -->
@@ -86,19 +75,19 @@
                 android:gravity="center">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Height"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:textColor="@android:color/black" />
-
-                <TextView
                     android:id="@+id/userHeight"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="175 cm"
+                    android:text="170 cm"
+                    android:textColor="@android:color/black"
                     android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Height"
+                    android:textSize="14sp"
                     android:textColor="@android:color/darker_gray" />
             </LinearLayout>
 
@@ -111,73 +100,258 @@
                 android:gravity="center">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Age"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:textColor="@android:color/black" />
-
-                <TextView
                     android:id="@+id/userAge"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="25"
+                    android:text="18 years"
+                    android:textColor="@android:color/black"
                     android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Age"
+                    android:textSize="14sp"
                     android:textColor="@android:color/darker_gray" />
             </LinearLayout>
         </LinearLayout>
 
-        <!-- Divider -->
-        <View
+        <!-- Edit Profile and Settings Buttons -->
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/secondaryColor"
-            android:layout_marginBottom="24dp" />
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp">
 
-        <!-- User Activities Section -->
+            <!-- Edit Profile Button -->
+
+            <!-- Settings Button (Orange) -->
+
+            <Button
+                android:id="@+id/editProfileButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="51dp"
+                android:backgroundTint="@color/buttonColor"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="Edit Profile"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/appSettingsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="51dp"
+                android:backgroundTint="#FF9800"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="Settings"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <!-- Goal Section -->
         <TextView
-            android:id="@+id/activityTitle"
+            android:id="@+id/goalTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Recent Activities"
-            android:textColor="@color/primaryColor"
+            android:text="Goal"
+            android:textColor="@android:color/black"
             android:textSize="16sp"
             android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Horizontal ScrollView for Activities -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <!-- Activity 1 -->
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="16dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/yoga" />
+
+                <!-- Activity 2 -->
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="16dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gym" />
+
+                <!-- Activity 3 -->
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="16dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/cardio" />
+
+                <!-- Activity 4 -->
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="16dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/stretching" />
+
+                <!-- Activity 5 -->
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="16dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/full_body" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- Macronutrient Goals Section -->
+        <TextView
+            android:id="@+id/macronutrientTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MACRONUTRIENT GOALS"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
             android:layout_marginBottom="8dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:background="@android:color/white"
+            android:elevation="2dp"
+            android:layout_marginBottom="16dp">
 
-            <!-- Activity 1 -->
-            <ImageView
+            <!-- Protein -->
+            <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:layout_marginEnd="8dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:scaleType="centerCrop"
-                android:src="@drawable/yoga" />
+                android:orientation="vertical"
+                android:gravity="center">
 
-            <!-- Activity 2 -->
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:layout_marginEnd="8dp"
-                android:layout_weight="1"
-                android:scaleType="centerCrop"
-                android:src="@drawable/gym" />
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/protein"
+                    android:layout_marginBottom="4dp" />
 
-            <!-- Activity 3 -->
-            <ImageView
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Protein"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="130"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Grams per day"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/darker_gray" />
+            </LinearLayout>
+
+            <!-- Carbs -->
+            <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="100dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:scaleType="centerCrop"
-                android:src="@drawable/cardio" />
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/carbs"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Carbs"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="275"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Grams per day"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/darker_gray" />
+            </LinearLayout>
+
+            <!-- Fat -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/fat"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fat"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="60"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Grams per day"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/darker_gray" />
+            </LinearLayout>
         </LinearLayout>
-
     </LinearLayout>
 </ScrollView>
